@@ -20,7 +20,9 @@ final class Module_FontAwesome extends GDO_Module
 
 	public function onInit()
 	{
-		GDT_Icon::$iconProvider = ["GDO\FontAwesome\FA_Icon", 'iconS']; 
+		# Set icon provider.
+		$method = ["GDO\FontAwesome\FA_Icon", 'iconS'];
+		GDT_Icon::$iconProvider = $method; 
 	}
 	
 	public function onIncludeScripts()
