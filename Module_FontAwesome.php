@@ -29,6 +29,6 @@ final class Module_FontAwesome extends GDO_Module
 	{
 		$min = Module_Core::instance()->cfgMinifyJS() !== 'no' ? '.min' : '';
 		$this->addBowerCSS("font-awesome/css/font-awesome$min.css");
+		$this->addCSS('css/gdo-font-awesome.css');
 	}
-
 }
