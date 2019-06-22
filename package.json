@@ -1,0 +1,12 @@
+{
+  "name": "gdo6-font-awesome",
+  "version": "6.09",
+  "description": "Font Awesome module for GDO6",
+  "main": "Module_FontAwesome.php",
+  "repository": "ssh://git@github.com/gizmore/gdo6-font-awesome",
+  "author": "gizmore",
+  "license": "MIT",
+  "dependencies": {
+    "font-awesome": "^4.7.0"
+  }
+}
