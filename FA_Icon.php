@@ -26,6 +26,8 @@ final class FA_Icon
 			'captcha' => 'lock',
 			'create' => 'plus-circle',
 			'delete' => 'minus-circle',
+			'done' => 'check',
+			'done_all' => 'check-double',
 			'download' => 'download',
 			'edit' => 'edit',
 			'email' => 'envelope',
