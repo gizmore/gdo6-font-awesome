@@ -42,6 +42,7 @@ final class FA_Icon
 			'reply' => 'reply',
 			'search' => 'search',
 			'title' => 'hashtag',
+			'user' => 'user',
 			'view' => 'eye',
 			
 // // 			'up' => 'caret-up',
