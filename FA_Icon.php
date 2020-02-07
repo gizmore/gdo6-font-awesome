@@ -42,6 +42,7 @@ final class FA_Icon
 			'reply' => 'reply',
 			'search' => 'search',
 			'title' => 'hashtag',
+			'trophy' => 'trophy',
 			'user' => 'user',
 			'view' => 'eye',
 			
