@@ -38,6 +38,7 @@ final class FA_Icon
         'list' => 'th-list',
         'menu' => 'bars',
         'message' => 'comment-dots',
+        'money' => 'money-bill',
         'plus' => 'plus',
         'quote' => 'quote-left',
         'remove' => 'minus',
@@ -46,6 +47,7 @@ final class FA_Icon
         'tag' => 'tags',
         'title' => 'hashtag',
         'trophy' => 'trophy',
+        'upload' => 'upload',
         'user' => 'user',
         'view' => 'eye',
         
