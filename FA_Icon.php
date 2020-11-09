@@ -13,7 +13,7 @@ use GDO\UI\GDT_IconUTF8;
 final class FA_Icon
 {
     public static $MAP = array(
-        'account_box' => 'address-card',
+        'account' => 'address-card',
         'add' => 'plus',
         'alert' => 'bell',
         'all' => 'list',
@@ -45,6 +45,7 @@ final class FA_Icon
         'reply' => 'reply',
         'search' => 'search',
         'tag' => 'tags',
+        'table' => 'table',
         'title' => 'hashtag',
         'trophy' => 'trophy',
         'upload' => 'upload',
