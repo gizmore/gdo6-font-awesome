@@ -9,8 +9,8 @@ use GDO\Core\Module_Core;
  * Registers FA_Icon as Icon-Provider when installed and active.
  * 
  * @author gizmore
- * @since 6.03
  * @version 6.05
+ * @since 6.03
  */
 final class Module_FontAwesome extends GDO_Module
 {
@@ -31,4 +31,5 @@ final class Module_FontAwesome extends GDO_Module
 		$this->addBowerCSS("@fortawesome/fontawesome-free/css/all$min.css");
 		$this->addCSS('css/gdo-font-awesome.css');
 	}
+
 }
