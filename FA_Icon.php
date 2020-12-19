@@ -37,6 +37,7 @@ final class FA_Icon
         'level' => 'trophy',
         'list' => 'th-list',
         'menu' => 'bars',
+        'minus' => 'minus',
         'message' => 'comment-dots',
         'money' => 'money-bill',
         'plus' => 'plus',
