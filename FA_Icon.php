@@ -4,11 +4,11 @@ namespace GDO\FontAwesome;
 use GDO\UI\GDT_IconUTF8;
 
 /**
- * FontAwesome icon provider
+ * FontAwesome icon provider.
  * 
  * @author gizmore
+ * @version 6.10
  * @since 6.01
- * @version 6.07
  */
 final class FA_Icon
 {
@@ -21,8 +21,11 @@ final class FA_Icon
         'arrow_left' => 'arrow-left',
         'arrow_right' => 'arrow-right',
         'arrow_up' => 'sort-up',
+        'audio' => 'itunes-note',
         'bars' => 'bars',
+        'book' => 'book',
         'captcha' => 'lock',
+        'check' => 'check',
         'create' => 'plus-circle',
         'credits' => 'credit-card',
         'delete' => 'minus-circle',
@@ -45,6 +48,7 @@ final class FA_Icon
         'remove' => 'minus',
         'reply' => 'reply',
         'search' => 'search',
+        'settings' => 'cog',
         'tag' => 'tags',
         'table' => 'table',
         'title' => 'hashtag',
@@ -82,7 +86,7 @@ final class FA_Icon
 		{
 			return GDT_IconUTF8::iconS($icon, $iconText, $style);
 		}
-		return sprintf('<span class="gdo-icon"%s><i class="fa fa-%s" title="%s"></i></span>', 
+		return sprintf('<span class="gdo-icon gdo-fa-icon"%s><i class="fa fa-%s" title="%s"></i></span>', 
 		    $style, self::$MAP[$icon], $iconText);
 	}
 	

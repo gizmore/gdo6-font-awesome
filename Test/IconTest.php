@@ -1,7 +1,7 @@
 <?php
 namespace GDO\FontAwesome\Test;
 
-use PHPUnit\Framework\TestCase;
+use GDO\Tests\TestCase;
 use GDO\UI\GDT_IconUTF8;
 use function PHPUnit\Framework\assertTrue;
 use GDO\FontAwesome\FA_Icon;
