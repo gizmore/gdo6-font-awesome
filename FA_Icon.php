@@ -22,10 +22,17 @@ final class FA_Icon
         'arrow_right' => 'arrow-right',
         'arrow_up' => 'sort-up',
         'audio' => 'itunes-note',
+        'back' => 'arrow-left',
         'bars' => 'bars',
+        'birthday' => 'birthday-cake',
+        'block' => 'ban',
         'book' => 'book',
+        'bulb' => 'lightbulb',
+        'calendar' => 'calendar-alt',
         'captcha' => 'lock',
+        'caret' => 'caret-right',
         'check' => 'check',
+        'country' => 'flag',
         'create' => 'plus-circle',
         'credits' => 'credit-card',
         'delete' => 'minus-circle',
@@ -86,7 +93,7 @@ final class FA_Icon
 		{
 			return GDT_IconUTF8::iconS($icon, $iconText, $style);
 		}
-		return sprintf('<span class="gdo-icon gdo-fa-icon"%s><i class="fa fa-%s" title="%s"></i></span>', 
+		return sprintf('<span class="gdo-icon gdo-fa-icon"%s><i class="fas fa-%s" title="%s"></i></span>', 
 		    $style, self::$MAP[$icon], $iconText);
 	}
 	
