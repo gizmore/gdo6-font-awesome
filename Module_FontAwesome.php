@@ -4,6 +4,7 @@ namespace GDO\FontAwesome;
 use GDO\Core\GDO_Module;
 use GDO\UI\GDT_Icon;
 use GDO\Core\Module_Core;
+use GDO\Javascript\Module_Javascript;
 
 /**
  * Registers FA_Icon as Icon-Provider when installed and active.
@@ -27,7 +28,7 @@ final class Module_FontAwesome extends GDO_Module
 	
 	public function onIncludeScripts()
 	{
-		$min = Module_Core::instance()->cfgMinifyJS() !== 'no' ? '.min' : '';
+		$min = Module_Javascript::instance()->jsMinAppend();
 		$this->addBowerCSS("@fortawesome/fontawesome-free/css/all$min.css");
 // 		$this->addCSS('css/gdo-font-awesome.css');
 	}
