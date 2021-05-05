@@ -7,8 +7,8 @@ use GDO\UI\GDT_IconUTF8;
  * FontAwesome icon provider.
  * 
  * @author gizmore
- * @version 6.10
- * @since 6.01
+ * @version 6.10.1
+ * @since 6.1.0
  */
 final class FA_Icon
 {
@@ -35,6 +35,7 @@ final class FA_Icon
         'country' => 'flag',
         'create' => 'plus-circle',
         'credits' => 'credit-card',
+        'cut' => 'cut',
         'delete' => 'minus-circle',
         'done' => 'check',
         'done_all' => 'check-double',
@@ -89,12 +90,19 @@ final class FA_Icon
     
 	public static function iconS($icon, $iconText, $style)
 	{
+	    static $fas;
+	    
+	    if ($fas === null)
+	    {
+	        $fas = Module_FontAwesome::instance()->cfgFontAwesomeStyle();
+	    }
+	    
 		if (!isset(self::$MAP[$icon]))
 		{
 			return GDT_IconUTF8::iconS($icon, $iconText, $style);
 		}
-		return sprintf('<span class="gdo-icon gdo-fa-icon"%s><i class="fas fa-%s" title="%s"></i></span>', 
-		    $style, self::$MAP[$icon], $iconText);
+		return sprintf('<span class="gdo-icon gdo-fa-icon"%s><i class="%s fa-%s" title="%s"></i></span>', 
+		    $style, $fas, self::$MAP[$icon], $iconText);
 	}
 	
 }

@@ -3,22 +3,37 @@ namespace GDO\FontAwesome;
 
 use GDO\Core\GDO_Module;
 use GDO\UI\GDT_Icon;
-use GDO\Core\Module_Core;
 use GDO\Javascript\Module_Javascript;
+use GDO\DB\GDT_EnumNoI18n;
 
 /**
  * Registers FA_Icon as Icon-Provider when installed and active.
+ * Choose between fas and fa style globally. 
  * 
  * @author gizmore
- * @version 6.05
- * @since 6.03
+ * @version 6.10.1
+ * @since 6.3.0
  */
 final class Module_FontAwesome extends GDO_Module
 {
 	public $module_priority = 12;
 	
-	public function defaultEnabled() { return false; }
+	public function onLoadLanguage() { return $this->loadLanguage('lang/fa'); }
+	
+	##############
+	### Config ###
+	##############
+	public function getConfig()
+	{
+	    return [
+	        GDT_EnumNoI18n::make('fa_style')->enumValues('fa', 'fas')->notNull()->initial('fa'),
+	    ];
+	}
+	public function cfgFontAwesomeStyle() { return $this->getConfigVar('fa_style'); }
 
+	############
+	### Init ###
+	############
 	public function onInit()
 	{
 		# Set icon provider.
@@ -30,7 +45,6 @@ final class Module_FontAwesome extends GDO_Module
 	{
 		$min = Module_Javascript::instance()->jsMinAppend();
 		$this->addBowerCSS("@fortawesome/fontawesome-free/css/all$min.css");
-// 		$this->addCSS('css/gdo-font-awesome.css');
 	}
 
 }

@@ -15,7 +15,7 @@ final class IconTest extends TestCase
     {
         foreach (GDT_IconUTF8::$MAP as $key => $icon)
         {
-            assertTrue(isset(FA_Icon::$MAP[$key]), "checking if Icon $key is defined in FA.");
+            assertTrue(isset(FA_Icon::$MAP[$key]), "checking if Icon $key that looks like $icon is defined in FA.");
         }
     }
 
