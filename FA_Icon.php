@@ -44,6 +44,7 @@ final class FA_Icon
         'email' => 'envelope',
         'error' => 'exclamation-triangle',
         'face' => 'user',
+        'female' => 'female',
         'help' => 'question-circle',
         'language' => 'language',
         'level' => 'trophy',
