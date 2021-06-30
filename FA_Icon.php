@@ -23,6 +23,7 @@ final class FA_Icon
         'arrow_up' => 'sort-up',
         'audio' => 'itunes-note',
         'back' => 'arrow-left',
+        'bank' => 'piggy-bank',
         'bars' => 'bars',
         'birthday' => 'birthday-cake',
         'block' => 'ban',
