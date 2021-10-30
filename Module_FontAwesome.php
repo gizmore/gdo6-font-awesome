@@ -20,6 +20,13 @@ final class Module_FontAwesome extends GDO_Module
 	
 	public function onLoadLanguage() { return $this->loadLanguage('lang/fa'); }
 	
+	public function getModuleLicenseFilenames()
+	{
+		return [
+			'bower_components/@fortawesome/fontawesome-free/LICENSE.txt'
+		];
+	}
+	
 	##############
 	### Config ###
 	##############
