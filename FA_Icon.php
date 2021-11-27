@@ -7,7 +7,7 @@ use GDO\UI\GDT_IconUTF8;
  * FontAwesome icon provider.
  * 
  * @author gizmore
- * @version 6.10.1
+ * @version 6.11.0
  * @since 6.1.0
  */
 final class FA_Icon
@@ -44,6 +44,7 @@ final class FA_Icon
         'edit' => 'edit',
         'email' => 'envelope',
         'error' => 'exclamation-triangle',
+    	'eye' => 'eye',
         'face' => 'user',
         'female' => 'female',
         'file' => 'paperclip',
