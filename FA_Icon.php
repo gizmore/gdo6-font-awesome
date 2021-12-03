@@ -33,6 +33,7 @@ final class FA_Icon
         'captcha' => 'lock',
         'caret' => 'caret-right',
         'check' => 'check',
+    	'close' => 'window-close',
         'country' => 'flag',
         'create' => 'plus-circle',
         'credits' => 'credit-card',
