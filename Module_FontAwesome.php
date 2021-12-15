@@ -53,7 +53,7 @@ final class Module_FontAwesome extends GDO_Module
 	
 	public function onIncludeScripts()
 	{
-		$min = Module_Javascript::instance()->jsMinAppend();
+		$min = Module_Javascript::instance()->cfgMinAppend();
 		$this->addBowerCSS("@fortawesome/fontawesome-free/css/all$min.css");
 		if ($this->cfgFontAwesomeShim4())
 		{
