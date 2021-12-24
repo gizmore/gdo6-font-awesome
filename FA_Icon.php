@@ -7,7 +7,7 @@ use GDO\UI\GDT_IconUTF8;
  * FontAwesome icon provider.
  * 
  * @author gizmore
- * @version 6.11.0
+ * @version 6.11.2
  * @since 6.1.0
  */
 final class FA_Icon
@@ -65,6 +65,7 @@ final class FA_Icon
         'list' => 'th-list',
         'lock' => 'lock',
         'male' => 'male',
+    	'medal' => 'medal',
         'menu' => 'bars',
         'message' => 'comment-dots',
         'minus' => 'minus',
